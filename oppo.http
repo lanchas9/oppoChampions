@@ -11,8 +11,6 @@ POST {{hostname}}guardarFotoNuevaDeCloudinary
 Content-Type: application/json
 
 {
-    "res" : {
-        "public_id" : "oppo/tm0drygvb5srb5jgpsrj", 
-        "format" : "jpg"
-    }
+    "public_id" : "oppo/tm0drygvb5srb5jgpsrj", 
+    "format" : "jpg"
 }
