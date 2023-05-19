@@ -11,14 +11,14 @@
     type="text/javascript">
    </script>
 </head>
-<body>
-    <img src="img/logo.jpg" alt="" srcset="" class="img" onclick="abreCloudinary()" id="upload_widget">
+<body onload="creaCloudinary()">
+    <img src="img/logo.jpg" alt="" srcset="" class="img" id="upload_widget">
 
     <script>
         const cloudName = "yellowhat"; // replace with your own cloud name
         const uploadPreset = "hxyqqgf9"; // replace with your own upload preset
 
-        function abreCloudinary(){
+        function creaCloudinary(){
             const myWidget = cloudinary.createUploadWidget(
             {
                 cloudName: cloudName,

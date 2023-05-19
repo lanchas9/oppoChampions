@@ -29,7 +29,7 @@
         function setup() {
     
             let width = window.innerWidth * .7
-            let msg = `<img src="img/telcel.png" alt="" srcset="" style="width: ${width}px;box-shadow: 10px 10px 5px black;">`
+            let msg = `<img src="img/telcel.jpg" alt="" srcset="" style="width: ${width}px;box-shadow: 10px 10px 5px black; max-width:500px;">`
             // let msg = "Te vamos a presentar la imagen original, tienes " + tiempoVerImagenOriginal +" segundos para aprendertela antes de que sea movida de manera aleatoria"
         
                 var modal = new tingle.modal({
@@ -54,7 +54,7 @@
                 // modal.setContent(`<h2>INSTRUCCIONES</h2><br><br><h3>${msg}</h3>`);
         
                 modal.setContent(`${msg}`);
-                modal.addFooterBtn('<b>OPPO trae el trofeo de la UEFA Champions League.</b> <br>Ir a mi fotografía:', 'tingle-btn tingle-btn--default', function() {
+                modal.addFooterBtn('OPPO trae el trofeo de la <b>UEFA Champions League</b>. <br>Ir a mi fotografía:', 'tingle-btn tingle-btn--default', function() {
                     // here goes some logic
                     modal.close();
                 });
