@@ -1,6 +1,12 @@
 body{
-    background-color: white;
+    color: #1E1E1E;
     text-align: center;
+    background: url(../img/oppo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  overflow: hidden;
 }
 
 .img{
