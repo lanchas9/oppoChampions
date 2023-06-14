@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5TXZQ7VZX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H5TXZQ7VZX');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra QR 2</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery.min.js"  type='text/javascript'></script>
+    <script src="js/qrcode.js"  type='text/javascript'></script>
+</head>
+<body>
+    <div>
+        <img src="img/logo.jpg" alt="" srcset="" class="logo">
+    </div>
+    <div class="centrado">
+        <div id="qrcode1" class="qr"></div>
+    </div>
+    <img src="" alt="" srcset="" class="fotoInvitado" id="fotoInvitado">
+    <div class="boton" onclick="regresa()">Regresar</div>
+    </div>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let path = urlParams.get('path');
+
+        document.getElementById("fotoInvitado").src = 'https://res.cloudinary.com/yellowhat/image/upload/' + path
+        let str1 = "https://api.whatsapp.com/send?phone=12134938066&text=Hola%2C+particip%C3%A9+en+el+evento+*OPPO+-+Champions+League+Trophy*+patrocinado+por+OPPO+con+su+incre%C3%ADble+*OPPO+Find+N2+Flip*%2C+smartphone+oficial+de+la+*UEFA+Champions+League*.+Mi+fotograf%C3%ADa+tiene+el+ID%3A+" + path
+        let str2= "https://miexperienciaoppo.com/whatsapp.html?path=" + path
+        let str = str2
+        let urlImagenQR = str
+            
+        try{
+            new QRCode(document.getElementById('qrcode1'), urlImagenQR);
+        }catch(err){
+            console.log(err)
+        }
+        async function regresa(){
+        window.location.href = `tomaFotoForumulaM.html`;
+        }
+    </script>
+</body>
+</html>
