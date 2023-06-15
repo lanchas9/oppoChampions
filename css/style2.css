@@ -1,12 +1,12 @@
 body{
-    color: #1E1E1E;
+    color: #ffffff;
     text-align: center;
-    background: url(../img/pxfuel.jpg) no-repeat center center fixed; 
+    /* background: url(../img/pxfuel.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .img{
